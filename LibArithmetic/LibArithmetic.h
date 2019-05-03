@@ -1,5 +1,5 @@
 #pragma once
-int sum(int a, int b);
-int sub(int a, int b);
-int div(int a, int b);
-int mul(int a, int b);
+__declspec(dllexport) int sum(int a, int b);
+__declspec(dllexport) int sub(int a, int b);
+__declspec(dllexport) int divide(int a, int b);
+__declspec(dllexport) int mul(int a, int b);
