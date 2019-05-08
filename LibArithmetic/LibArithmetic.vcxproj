@@ -14,6 +14,7 @@
     <ProjectGuid>{BA65329D-A27F-4350-94A0-0507775656C3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LibArithmetic</RootNamespace>
+    <ProjectName>LibArithmeticDynamic</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -1,13 +1,13 @@
 ﻿#include <iostream>
 #include <Windows.h>
-// #include "../LibArithmetic/LibArithmetic.h"
+#include "LibArithmeticStatic.h"
 int main()
 {
     setlocale(LC_ALL, "russian");
     int a = 12;
     int b = 3;
     std::cout << "a = " << a << " b = " << b << std::endl;
-    HMODULE hLib = LoadLibrary("LibArithmetic.dll");
+    HMODULE hLib = LoadLibrary("LibArithmeticDynamic.dll");
     if(hLib != nullptr)
     {
         std::cout << "====================DYNAMIC LIBRARY====================" << std::endl;
@@ -38,6 +38,10 @@ int main()
         std::cout << "====================DYNAMIC LIBRARY====================" << std::endl;
     }
     std::cout << "====================STATIC LIBRARY====================" << std::endl;
+    std::cout << "sum: " << sum(a, b) << std::endl;
+    std::cout << "sub: " << sub(a, b) << std::endl;
+    std::cout << "mul: " << mul(a, b) << std::endl;
+    std::cout << "div: " << divide(a, b) << std::endl;
     std::cout << "====================STATIC LIBRARY====================" << std::endl;
 	system("pause");
 	return 0;

@@ -7,7 +7,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console", "Console\Console.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibArithmetic", "LibArithmetic\LibArithmetic.vcxproj", "{BA65329D-A27F-4350-94A0-0507775656C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibArithmeticStatic", "LibArithmeticStatic", "{D2751DF4-700B-4BFE-A684-13C7D1CD62D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibArithmeticStatic.Shared", "LibArithmeticStatic\LibArithmeticStatic.Shared\LibArithmeticStatic.Shared.vcxitems", "{7BFE6CAD-EAF4-4CFB-8877-E77B92C120B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibArithmeticStatic.Windows", "LibArithmeticStatic\LibArithmeticStatic.Windows\LibArithmeticStatic.Windows.vcxproj", "{4B599828-8DA7-4346-A94A-96370122AA07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibArithmeticStatic.WindowsPhone", "LibArithmeticStatic\LibArithmeticStatic.WindowsPhone\LibArithmeticStatic.WindowsPhone.vcxproj", "{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LibArithmeticStatic\LibArithmeticStatic.Shared\LibArithmeticStatic.Shared.vcxitems*{4b599828-8da7-4346-a94a-96370122aa07}*SharedItemsImports = 4
+		LibArithmeticStatic\LibArithmeticStatic.Shared\LibArithmeticStatic.Shared.vcxitems*{dcf942ed-21c4-4c08-bc21-8e5943c5ca87}*SharedItemsImports = 4
+		LibArithmeticStatic\LibArithmeticStatic.Shared\LibArithmeticStatic.Shared.vcxitems*{7bfe6cad-eaf4-4cfb-8877-e77b92c120b7}*SharedItemsImports = 9
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|Win32 = Debug|Win32
@@ -33,8 +46,35 @@ Global
 		{BA65329D-A27F-4350-94A0-0507775656C3}.Release|Win32.ActiveCfg = Release|Win32
 		{BA65329D-A27F-4350-94A0-0507775656C3}.Release|Win32.Build.0 = Release|Win32
 		{BA65329D-A27F-4350-94A0-0507775656C3}.Release|x64.ActiveCfg = Release|Win32
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|ARM.Build.0 = Debug|ARM
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|Win32.Build.0 = Debug|Win32
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|x64.ActiveCfg = Debug|x64
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Debug|x64.Build.0 = Debug|x64
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|ARM.ActiveCfg = Release|ARM
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|ARM.Build.0 = Release|ARM
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|Win32.ActiveCfg = Release|Win32
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|Win32.Build.0 = Release|Win32
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|x64.ActiveCfg = Release|x64
+		{4B599828-8DA7-4346-A94A-96370122AA07}.Release|x64.Build.0 = Release|x64
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Debug|ARM.Build.0 = Debug|ARM
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Debug|Win32.Build.0 = Debug|Win32
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Debug|x64.ActiveCfg = Debug|Win32
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Release|ARM.ActiveCfg = Release|ARM
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Release|ARM.Build.0 = Release|ARM
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Release|Win32.ActiveCfg = Release|Win32
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Release|Win32.Build.0 = Release|Win32
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BFE6CAD-EAF4-4CFB-8877-E77B92C120B7} = {D2751DF4-700B-4BFE-A684-13C7D1CD62D8}
+		{4B599828-8DA7-4346-A94A-96370122AA07} = {D2751DF4-700B-4BFE-A684-13C7D1CD62D8}
+		{DCF942ED-21C4-4C08-BC21-8E5943C5CA87} = {D2751DF4-700B-4BFE-A684-13C7D1CD62D8}
 	EndGlobalSection
 EndGlobal

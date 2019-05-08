@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{adc04652-2458-4311-8752-083f59059d3d}</ProjectGuid>
+		<ProjectGuid>{4b599828-8da7-4346-a94a-96370122aa07}</ProjectGuid>
 		<RootNamespace>LibArithmeticStatic</RootNamespace>
 		<DefaultLanguage>en-US</DefaultLanguage>
 		<MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
